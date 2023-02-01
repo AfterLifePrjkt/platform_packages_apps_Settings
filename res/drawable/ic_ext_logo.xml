@@ -11,52 +11,34 @@
      limitations under the License.
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="1280dp"
-    android:height="510dp"
-    android:viewportWidth="1280"
-    android:viewportHeight="510">
-
-    <path
-        android:strokeColor="?android:attr/textColorPrimary"
-        android:strokeWidth="9.6448"
-        android:strokeMiterLimit="10"
-        android:pathData="M 433.7 317 L 510 193" />
-    <path
-        android:strokeColor="?android:attr/textColorPrimary"
-        android:strokeWidth="9.6448"
-        android:strokeMiterLimit="10"
-        android:pathData="M 583.3 317 L 507 193" />
-    <path
-        android:fillColor="?android:attr/textColorPrimary"
-        android:pathData="M 506 190.4 H 511.1 V 199.1 H 506 V 190.4 Z" />
-    <path
-        android:strokeColor="?android:attr/textColorPrimary"
-        android:strokeWidth="9.6448"
-        android:strokeMiterLimit="10"
-        android:pathData="M 701.4 314.8 L 579.2 314.8" />
-    <path
-        android:strokeColor="?android:attr/colorAccent"
-        android:strokeWidth="9.6448"
-        android:strokeMiterLimit="10"
-        android:pathData="M 701.1 254.8 L 578.9 254.8" />
-    <path
-        android:strokeColor="?android:attr/textColorPrimary"
-        android:strokeWidth="9.6448"
-        android:strokeMiterLimit="10"
-        android:pathData="M 701.1 195.3 L 578.9 195.3" />
-    <path
-        android:strokeColor="?android:attr/textColorPrimary"
-        android:strokeWidth="9.6448"
-        android:strokeMiterLimit="10"
-        android:pathData="M 698 316.1 L 848.6 194.8" />
-    <path
-        android:strokeColor="?android:attr/textColorPrimary"
-        android:strokeWidth="9.6448"
-        android:strokeMiterLimit="10"
-        android:pathData="M 847.7 315.4 L 697.9 194.2" />
-    <path
-        android:strokeColor="?android:attr/colorAccent"
-        android:strokeWidth="9.6448"
-        android:strokeMiterLimit="10"
-        android:pathData="M 640 37.9 C 759.790562238 37.9 856.9 135.098980812 856.9 255 C 856.9 374.901019188 759.790562238 472.1 640 472.1 C 520.209437762 472.1 423.1 374.901019188 423.1 255 C 423.1 135.098980812 520.209437762 37.9 640 37.9 Z" />
+				android:width="1280.0dp"
+		android:height="510.0dp"
+		android:viewportWidth="1280.0"
+		android:viewportHeight="510.0">
+	<path
+		android:fillColor="?android:colorPrimary"
+		android:strokeColor="?android:textColorPrimary"
+		android:strokeWidth="20.4"
+		android:strokeLineJoin="miter"
+		android:fillType="nonZero"
+		android:strokeLineCap="round"
+		android:pathData="M640.67,16.52C771.97,16.52,878.41,122.96,878.41,254.25C878.41,385.55,771.97,491.99,640.67,491.99C509.38,491.99,402.94,385.55,402.94,254.25C402.94,122.96,509.38,16.52,640.67,16.52z"/>
+	<path
+		android:fillColor="?android:textColorPrimary"
+		android:strokeColor="?android:colorAccent"
+		android:strokeWidth="15.299999"
+		android:strokeLineJoin="bevel"
+		android:fillType="nonZero"
+		android:strokeAlpha="0.3"
+		android:strokeLineCap="round"
+		android:pathData="M697.63,355.38L587.20,92.44L628.16,92.44L719.22,312.12L772.87,178.59L721.91,181.93L710.69,149.82L820.83,149.82L738.31,355.19L697.63,355.19"/>
+	<path
+		android:fillColor="?android:textColorPrimary"
+		android:strokeColor="?android:colorAccent"
+		android:strokeWidth="15.299999"
+		android:strokeLineJoin="bevel"
+		android:fillType="nonZero"
+		android:strokeAlpha="0.3"
+		android:strokeLineCap="round"
+		android:pathData="M591.00,159.62L700.96,422.75L660.00,422.68L569.33,202.84L513.35,338.80L566.41,333.02L577.57,365.15L467.44,364.96L550.31,159.73L591.00,159.80"/>
 </vector>
