@@ -50,6 +50,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
+    <!-- AfterLife maintainer  -->
+    <Preference
+        android:key="aexAL_maintainer"
+        android:title="@string/aexAL_maintainer_title"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.AexALMaintainerPreferenceController"/>
+
     <!-- Mainline module version
     <Preference
         android:key="module_version"

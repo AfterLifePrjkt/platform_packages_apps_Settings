@@ -221,4 +221,7 @@
     <string name="adaptive_playback_timeout_5_min_summary">On (5 minutes)</string>
     <string name="adaptive_playback_timeout_10_min">10 minutes</string>
     <string name="adaptive_playback_timeout_10_min_summary">On (10 minutes)</string>
+
+    <!-- aexAL maintainer -->
+    <string name="aexAL_maintainer_title">Device maintainer</string>
 </resources>
