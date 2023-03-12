@@ -94,7 +94,7 @@ public class AxlSpecUtils {
     public static String getProcessorModel() {
         String cpuModelAxl = SystemProperties.get(AXL_CPU_MODEL_PROPERTY);
         String cpuModelFallback = SystemProperties.get(FALLBACK_CPU_MODEL_PROPERTY);
-        if (!cpuModelRyzen.isEmpty()) {
+        if (!cpuModelAxl.isEmpty()) {
             return cpuModelAxl;
         } else if (!cpuModelFallback.isEmpty()) {
             return cpuModelFallback;

@@ -33,7 +33,7 @@ import com.android.settingslib.widget.LayoutPreference;
 import com.android.settingslib.Utils;
 import com.android.settings.core.PreferenceControllerMixin;
 
-public class RyzenInfoPreferenceController extends AbstractPreferenceController {
+public class AxlInfoPreferenceController extends AbstractPreferenceController {
 
     private static final String KEY_AXL_INFO = "axl_info";
 
