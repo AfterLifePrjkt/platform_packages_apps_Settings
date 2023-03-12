@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright (C) 2019 The Android Open Source Project
-
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-
        http://www.apache.org/licenses/LICENSE-2.0
-
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -18,7 +15,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/firmware_version"
+    android:title="@string/firmware_info"
     settings:keywords="@string/keywords_android_version">
 
 <PreferenceScreen
@@ -26,14 +23,9 @@
         android:layout="@layout/afl_logo"
         android:selectable="false" />
 
-    <!-- Android version -->
-    <Preference
-        android:key="os_firmware_version"
-        android:title="@string/firmware_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:searchable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+    <!-- Firmware Category -->
+    <PreferenceCategory
+        android:title="@string/afl_fw_rom_cat">
 
     <!-- Extended version -->
     <Preference
@@ -41,15 +33,8 @@
          android:title="@string/extended_version"
          android:summary="@string/summary_placeholder"
          settings:enableCopying="true"
+         settings:layout="@layout/xd_pref_card_top"
          settings:controller="com.android.settings.deviceinfo.firmwareversion.ExtendedVersionPreferenceController"/>
-
-
-    <!-- Security patch -->
-    <Preference
-        android:key="security_key"
-        android:title="@string/security_patch"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
     <!-- AfterLife maintainer  -->
     <Preference
@@ -57,32 +42,48 @@
         android:title="@string/aexAL_maintainer_title"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
+        settings:layout="@layout/xd_pref_card_bot"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AexALMaintainerPreferenceController"/>
 
-    <!-- Mainline module version
+    </PreferenceCategory>
+
+    <!-- Firmware Category -->
+    <PreferenceCategory
+        android:title="@string/afl_fw_info_cat">
+
+    <!-- Android version -->
     <Preference
-        android:key="module_version"
-        android:title="@string/module_version"
+        android:key="os_firmware_version"
+        android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
+        settings:layout="@layout/xd_pref_card_top"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/ -->
+        settings:searchable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
+    <!-- Security patch -->
+    <Preference
+        android:key="security_key"
+        android:title="@string/security_patch"
+        settings:enableCopying="true"
+        settings:layout="@layout/xd_pref_card_bot"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
+
+</PreferenceCategory>
+
+
+    <!-- General Category -->
+    <PreferenceCategory
+        android:title="@string/afl_fw_general_cat">
 
     <!-- Baseband -->
     <Preference
         android:key="base_band"
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
+        settings:layout="@layout/xd_pref_card_top"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
-
-    <!-- Build date -->
-    <Preference 
-        android:key="build_date"
-        android:title="@string/build_date"
-        android:summary="@string/build_date_default"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
 
     <!-- Kernel -->
     <Preference
@@ -90,14 +91,24 @@
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
+        settings:layout="@layout/xd_pref_card_mid"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
+
+    <!-- Build date -->
+    <Preference 
+        android:key="build_date"
+        android:title="@string/build_date"
+        android:summary="@string/build_date_default"
+        settings:enableCopying="true"
+        settings:layout="@layout/xd_pref_card_mid"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
 
     <!-- Build -->
     <Preference
         android:key="os_build_number"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
+        settings:layout="@layout/xd_pref_card_mid"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
 
@@ -106,8 +117,10 @@
         android:key="selinux_status"
         android:title="@string/selinux_status"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
+        settings:layout="@layout/xd_pref_card_bot"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SelinuxStatusPreferenceController"/>
+
+</PreferenceCategory>
 
 </PreferenceScreen>
