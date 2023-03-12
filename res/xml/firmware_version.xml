@@ -22,8 +22,9 @@
     settings:keywords="@string/keywords_android_version">
 
 <PreferenceScreen
-    android:layout="@layout/aex_logo"
-    android:key="aex_logo" />
+        android:key="afl_logo"
+        android:layout="@layout/afl_logo"
+        android:selectable="false" />
 
     <!-- Android version -->
     <Preference
