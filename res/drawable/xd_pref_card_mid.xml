@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright 2021 xdroid, xyzprjkt
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-          http://www.apache.org/licenses/LICENSE-2.0
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-<ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/afl_ripple">
-    <item android:id="@android:id/mask">
+<ripple
+    android:color="@color/afl_ripple"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/mask">
         <shape>
-            <solid android:color="#FFFFFFFF" />
+            <solid
+                android:color="#ffffffff" />
             <corners
-                android:topRightRadius="@dimen/xd_pref_card_radius-outer"
-                android:topLeftRadius="@dimen/xd_pref_card_radius-outer"
-                android:bottomLeftRadius="@dimen/xd_pref_card_radius-outer"
-                android:bottomRightRadius="@dimen/xd_pref_card_radius-outer" />
+                android:topLeftRadius="@dimen/dimen_7f0703c7"
+                android:topRightRadius="@dimen/dimen_7f0703c7"
+                android:bottomLeftRadius="@dimen/dimen_7f0703c7"
+                android:bottomRightRadius="@dimen/dimen_7f0703c7" />
         </shape>
     </item>
-    <item android:id="@android:id/background">
-        <shape android:shape="rectangle">
-            <solid android:color="@color/xd_pref_card_color" />
+    <item
+        android:id="@android:id/background">
+        <shape
+            android:shape="rectangle">
+            <gradient
+                android:startColor="@color/afl_pref_card_color_gradient_start"
+                android:endColor="@color/afl_pref_card_color_gradient_end"
+                android:angle="0.0"
+                android:type="linear" />
             <corners
-                android:topRightRadius="@dimen/xd_pref_card_radius-outer"
-                android:topLeftRadius="@dimen/xd_pref_card_radius-outer"
-                android:bottomLeftRadius="@dimen/xd_pref_card_radius-outer"
-                android:bottomRightRadius="@dimen/xd_pref_card_radius-outer" />
+                android:topLeftRadius="@dimen/dimen_7f0703c7"
+                android:topRightRadius="@dimen/dimen_7f0703c7"
+                android:bottomLeftRadius="@dimen/dimen_7f0703c7"
+                android:bottomRightRadius="@dimen/dimen_7f0703c7" />
         </shape>
     </item>
 </ripple>

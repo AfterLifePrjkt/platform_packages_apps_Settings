@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:title="@string/afl_about_info"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/afl_dev_info"
+        android:key="about">
+        <Preference
+            android:summary="@string/afl_about_info_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/XZone_Ctrl" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/ic_github"
+            android:title="@string/github"
+            android:summary="@string/github_description">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/RdW-afk" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/ic_telegram"
+            android:title="@string/telegram"
+            android:summary="@string/telegram_description">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/wizardX00T" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/leads"
+        android:key="leads">
+        <Preference
+            android:icon="@drawable/ic_devs"
+            android:title="@string/afl_team_1"
+            android:summary="@string/afl_team1_description">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Romeo_Delta_Whiskey" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/ic_devs"
+            android:title="@string/afl_team_2"
+            android:summary="@string/afl_team2_description">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/dotkit" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/ic_devs"
+            android:title="@string/afl_team_3"
+            android:summary="@string/afl_team3_description">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/xarilsmn" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/designers"
+        android:key="designers">
+        <Preference
+            android:icon="@drawable/ic_design"
+            android:title="@string/afl_designer_1"
+            android:summary="@string/afl_designer1_description">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Romeo_Delta_Whiskey" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/ic_design"
+            android:title="@string/afl_designer_2"
+            android:summary="@string/afl_designer2_description">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/dotkit" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/ic_design"
+            android:title="@string/afl_designer_3"
+            android:summary="@string/afl_designer3_description">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/xarilsmn" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -129,7 +129,7 @@
     <dimen name="search_bar_margin">16dp</dimen>
     <dimen name="search_bar_height">52dp</dimen>
     <dimen name="search_bar_text_size">20sp</dimen>
-    <dimen name="search_bar_corner_radius">24dp</dimen>
+    <dimen name="search_bar_corner_radius">22dp</dimen>
     <dimen name="search_bar_content_inset">56dp</dimen>
 
     <!-- Avatar -->
@@ -462,4 +462,5 @@
     <dimen name="xd_pref_card_radius">22dp</dimen>
     <dimen name="xd_pref_card_radius-outer">0dp</dimen>
     <dimen name="xd_pref_card_horizontal_padding">16dp</dimen>
+    <dimen name="dimen_7f0703c7">0.0dip</dimen>
 </resources>

@@ -232,8 +232,8 @@
     <string name="afl_screen_title">Display</string>
 
     <!-- About phone screen, status item label -->
-    <string name="firmware_info">Os Information</string>
-    <string name="firmware_info_summary">Information about Os in this phone</string>
+    <string name="firmware_info">System Operations</string>
+    <string name="firmware_info_summary">Know a little about your systems</string>
 
     <!-- Firmware Version Category-->
     <string name="afl_fw_rom_cat">OS Build Info</string>
@@ -245,4 +245,21 @@
     <string name="model_summary">Model, phone number, IMEI, etc</string>
     <string name="model_name">Device status</string>
     <string name="legal_summary">Licenses and legal</string>
+
+    <string name="afl_about_info">About AfterLife Version</string>
+    <string name="afl_dev_info">About AfterLife</string>
+    <string name="afl_about_info_summary">AfterLife is an external version of aex, since aex announced that the project was temporarily suspended until an unspecified time, we are fans of aex who don't want aex to stop,trying to continue this project, and of course in our hearts aex never die. #KeepExtension #NeverDie</string>
+    <string name="afl_team_1">Romeo Delta Whiskey</string>
+    <string name="afl_team1_description">Lead Developer</string>
+    <string name="afl_team_2">DotKit</string>
+    <string name="afl_team2_description">Lead Developer</string>
+    <string name="afl_designer1_description">Builder, Add source code, Design</string>
+    <string name="afl_designer_1">Romeo Delta Whiskey</string>
+    <string name="afl_designer2_description">Builder, Add source code, Design</string>
+    <string name="afl_designer_2">DotKit</string>
+    <string name="afl_about_summary">Our introduction and our team</string>
+    <string name="afl_team_3">Ari Lesmana</string>
+    <string name="afl_team3_description">Porting Feature / UI</string>
+    <string name="afl_designer3_description">Porting feature, re-Design</string>
+    <string name="afl_designer_3">Ari Lesmana</string>
 </resources>
