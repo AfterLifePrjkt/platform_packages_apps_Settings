@@ -29,7 +29,15 @@
         android:order="1"
         android:title="@string/aex_about_info"
         android:summary="@string/aex_about_summary"
-        android:fragment="com.android.settings.AboutUs" />
+        android:fragment="com.android.settings.AboutUs"
+        settings:layout="@layout/xd_pref_card_top" />
+
+    <Preference
+        android:title="@string/afl_about_info"
+        android:key="afl_about_info"
+        android:summary="@string/afl_about_summary"
+        android:fragment="com.android.settings.AboutAfterLife"
+        settings:layout="@layout/xd_pref_card_bot" />
 
     <PreferenceCategory
         android:key="basic_info_category"
