@@ -41,6 +41,7 @@
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_settings_extensions"
         android:title="@string/extensions_title"
+        android:summary="@string/build_tweaks_summary_title"
         android:key="top_level_extensions"
         android:order="-170"
         android:fragment="org.aospextended.extensions.Extensions"
