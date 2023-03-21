@@ -255,11 +255,11 @@
     <string name="afl_team2_description">Lead Developer</string>
     <string name="afl_designer1_description">Builder, Add source code, Design</string>
     <string name="afl_designer_1">Romeo Delta Whiskey</string>
-    <string name="afl_designer2_description">Builder, Add source code, Design</string>
-    <string name="afl_designer_2">DotKit</string>
+    <string name="afl_designer2_description">Design UI/UX</string>
+    <string name="afl_designer_2">nssʇ!ǝɹ</string>
     <string name="afl_about_summary">Our introduction and our team</string>
     <string name="afl_team_3">Ari Lesmana</string>
     <string name="afl_team3_description">Porting Feature / UI</string>
-    <string name="afl_designer3_description">Porting feature, re-Design</string>
+    <string name="afl_designer3_description">Porting feature, Design UI/UX</string>
     <string name="afl_designer_3">Ari Lesmana</string>
 </resources>
