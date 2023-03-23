@@ -218,9 +218,6 @@ public class TopLevelSettings extends DashboardFragment implements
             if (key.equals("airplane_mode")) {
                 preference.setLayoutResource(R.layout.top_level_preference_top_switch);
             }
-            if (key.equals("tether_settings")) {
-                preference.setLayoutResource(R.layout.top_level_preference_middle);
-            }
             if (key.equals("top_level_network")) {
                 preference.setLayoutResource(R.layout.top_level_preference_middle);
             }

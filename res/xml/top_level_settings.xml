@@ -19,14 +19,14 @@
     <com.android.settingslib.widget.LayoutPreference
         android:layout="@layout/usercard"
         android:key="top_level_usercard"
-        android:order="-200"
+        android:order="-190"
         android:fragment="com.android.settings.users.UserSettings" />
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_settings_os"
         android:title="@string/firmware_info"
         android:key="firmware_version"
         android:summary="@string/firmware_info_summary"
-        android:order="-190"
+        android:order="-180"
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
         settings:highlightableMenuKey="@string/menu_key_firmwareversion" />
     <com.android.settings.widget.HomepagePreference
@@ -34,7 +34,7 @@
         android:title="@string/about_settings"
         android:key="top_level_about_device"
         android:summary="@string/summary_placeholder"
-        android:order="-180"
+        android:order="-170"
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"
         settings:highlightableMenuKey="@string/menu_key_about_device" />
@@ -43,23 +43,15 @@
         android:title="@string/extensions_title"
         android:summary="@string/build_tweaks_summary_title"
         android:key="top_level_extensions"
-        android:order="-170"
+        android:order="-160"
         android:fragment="org.aospextended.extensions.Extensions"
         settings:controller="org.aospextended.extensions.TopLevelExtensionsEntryPreferenceController" />
     <SwitchPreference
         android:icon="@drawable/ic_airplanemode_active"
         android:title="@string/airplane_mode"
         android:key="airplane_mode"
-        android:order="-160"
-        settings:controller="com.android.settings.network.AirplaneModePreferenceController" />
-    <com.android.settings.widget.HomepagePreference
-        android:icon="@drawable/ic_hotspot"
-        android:title="@string/tether_settings_title_all"
-        android:key="tether_settings"
-        android:summary="@string/summary_placeholder"
         android:order="-150"
-        android:fragment="com.android.settings.TetherSettings"
-        settings:keywords="@string/keywords_hotspot_tethering" />
+        settings:controller="com.android.settings.network.AirplaneModePreferenceController" />
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_settings_wireless"
         android:title="@string/network_dashboard_title"
