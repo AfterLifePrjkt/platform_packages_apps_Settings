@@ -24,4 +24,31 @@
         <item>@string/security_settings_fingerprint_enroll_find_sensor_message_right</item>
     </string-array>
 
+    <!-- Random summary -->
+    <string-array name="afl_summaries">
+        <item>Warning: Aex NeverDie !</item>
+        <item>get some delicious features</item>
+        <item>You Are genZ Now</item>
+        <item>Stay Allive</item>
+        <item>Tap For More Cuztomizations</item>
+        <item>The Space of AfterLife stuff</item>
+        <item>Aex Dead? NEVER!</item>
+        <item>Why So Seriouss</item>
+        <item>Now Or Never</item>
+        <item>Welcome To AfterLife Era</item>
+        <item>Haters gonna hate</item>
+        <item>From Indonesia With Love</item>
+        <item>This entry will self-destruct in five minutes</item>
+        <item>Some assembly required</item>
+        <item>With great features comes great responsibility</item>
+        <item>If everything is coming your way then you\'re in the wrong lane</item>
+        <item>This is an unauthorized cybernetic announcement</item>
+        <item>No stopping or standing</item>
+        <item>Customize till you want it</item>
+        <item>Think less, customize more</item>
+        <item>FBI: Feature Base Isolation</item>
+        <item>This is what awesome looks like</item>
+        <item>Don\'t dream it. Do it</item>
+    </string-array>
+
 </resources>

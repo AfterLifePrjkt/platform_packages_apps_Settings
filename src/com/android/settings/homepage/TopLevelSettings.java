@@ -57,12 +57,17 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.LayoutPreference;
 import com.android.settings.widget.EntityHeaderController;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements
         PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
 
     private static final String TAG = "TopLevelSettings";
     private static final String SAVED_HIGHLIGHT_MIXIN = "highlight_mixin";
+    private static final String KEY_AFL = "top_level_extensions";
     private static final String PREF_KEY_SUPPORT = "top_level_support";
     private static final String KEY_USER_CARD = "top_level_usercard";
 
@@ -97,6 +102,13 @@ public class TopLevelSettings extends DashboardFragment implements
         super.onAttach(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
         use(SupportPreferenceController.class).setActivity(getActivity());
+        updateAflSummary();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateAflSummary();
     }
 
     @Override
@@ -388,6 +400,17 @@ public class TopLevelSettings extends DashboardFragment implements
     void reloadHighlightMenuKey() {
         if (mHighlightMixin != null) {
             mHighlightMixin.reloadHighlightMenuKey(getArguments());
+        }
+    }
+
+    private void updateAflSummary() {
+        Preference afl = findPreference(KEY_AFL);
+        if (afl != null) {
+            String[] summaries = getContext().getResources().getStringArray(
+                    R.array.afl_summaries);
+            Random rnd = new Random();
+            int summNO = rnd.nextInt(summaries.length);
+            afl.setSummary(summaries[summNO]);
         }
     }
 
