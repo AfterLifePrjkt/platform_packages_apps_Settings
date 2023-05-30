@@ -43,7 +43,7 @@
         android:title="@string/extensions_title"
         android:key="top_level_extensions"
         android:order="-160"
-        android:fragment="org.aospextended.extensions.Extensions"
+        android:fragment="org.aospextended.extensions.ExtensionsPlus"
         settings:controller="org.aospextended.extensions.TopLevelExtensionsEntryPreferenceController" />
     <SwitchPreference
         android:icon="@drawable/ic_airplanemode_active"
