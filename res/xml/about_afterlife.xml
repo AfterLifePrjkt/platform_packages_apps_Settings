@@ -45,7 +45,7 @@
             android:summary="@string/afl_team2_description">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://t.me/dotkit" />
+                android:data="https://t.me/xarilsmn" />
         </Preference>
         <Preference
             android:icon="@drawable/ic_devs"
@@ -53,7 +53,7 @@
             android:summary="@string/afl_team3_description">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://t.me/xarilsmn" />
+                android:data="https://t.me/iverzasterix" />
         </Preference>
     </PreferenceCategory>
     <PreferenceCategory
