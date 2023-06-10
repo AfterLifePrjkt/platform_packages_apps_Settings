@@ -33,6 +33,10 @@
         android:accessibilityTraversalAfter="@id/homepage_title" />
     <TextView
         android:id="@+id/homepage_title"
+        android:text="@string/settings_label"
+        style="@style/HomepageTitleText" />
+    <TextView
+        android:id="@+id/greetings_title"
         android:text="@string/dashboard_random4"
         style="@style/custom_toolbar.Expanded"/>
     <FrameLayout

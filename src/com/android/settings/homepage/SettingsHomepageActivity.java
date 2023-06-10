@@ -208,7 +208,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
             }
         }
 
-        final TextView textView = findViewById(R.id.homepage_title);
+        final TextView textView = findViewById(R.id.greetings_title);
 
         switch (Calendar.getInstance().get(Calendar.HOUR_OF_DAY)) {
             case 5: case 6: case 7: case 8: case 9: case 10:
